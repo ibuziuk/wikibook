@@ -1,0 +1,19 @@
+{
+  "name": "wikibook",
+  "version": "0.0.0",
+  "authors": [
+    "Ilya Buziuk <ibuziuk@exadel.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}
