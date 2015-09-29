@@ -26,6 +26,7 @@ $(document).ready(function() {
 							if (poster && poster !== "N/A") {
 								var img = document.createElement('img');
 								img.setAttribute('src', poster);
+								img.className = 'poster';
 								root.appendChild(img);
 							}
 						});
