@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	console.log( "ready!" );
+	console.log( "index ready!" );
+	$('#search').val('');
 	$('#search').keyup(function () {	 
 		var searchField = $('#search').val();
 		var url = "http://www.omdbapi.com/?s=" + searchField;
@@ -9,7 +10,7 @@ $(document).ready(function() {
 			if (resultSet) {
 				$.each(resultSet, function(key, val) {
 					output +='<li id="' + val.Title + '">';
-					output +='<h2>' + val.Title + '</h2>';
+					output +='<a href="profile.html?title=' + val.Title + '">' + val.Title + '</a>';
 					output +='<p>' + val.Year + '</p>';
 					output +='</li>';
 				});
