@@ -1,0 +1,67 @@
+header {
+	border-radius:5px;
+	background-color: #f9f9f9;
+    padding:5px;
+    margin: 5px;
+}
+
+h3, h4 {
+   font-family: sans-serif;
+   font-weight: bold;
+}
+
+a {
+	background: none;
+	color: #0645ad;
+	text-decoration: none;
+}
+
+ul {
+    list-style-type: disk;
+}
+
+.profile {
+	border: 1px solid #aaa;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f9f9f9;
+    float: left;
+}
+
+.profile_info {
+	float: left;
+}
+
+.contents {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	margin: 5px;
+	padding: 10px;
+	float: left;
+}
+
+.category_container {
+	margin: 5px;
+	clear: both;
+	float: left;
+}
+
+.logo {
+	width: 20px;
+	height: 20px;
+	padding-left: 10px;
+}
+
+.search {
+	border-radius:5px;
+	width: 500px;
+}
+
+.category {
+	border: 1px solid #aaa;
+	border-spacing: 3px;
+	-webkit-border-horizontal-spacing: 3px;
+    -webkit-border-vertical-spacing: 3px;
+    padding: 5px;
+    margin: 5px;
+}
