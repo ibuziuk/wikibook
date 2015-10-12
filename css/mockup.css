@@ -1,11 +1,11 @@
 header {
-	border-radius:5px;
+	border: 1px solid #aaa;
 	background-color: #f9f9f9;
     padding:5px;
     margin: 5px;
 }
 
-h3, h4 {
+h1, h2, h3, h4, h5, h6 {
    font-family: sans-serif;
    font-weight: bold;
 }
@@ -20,12 +20,16 @@ ul {
     list-style-type: disk;
 }
 
+.center {
+	text-align: center;
+}
+
 .profile {
 	border: 1px solid #aaa;
     padding: 5px;
-    margin: 5px;
     background-color: #f9f9f9;
     float: left;
+    margin: 5px;
 }
 
 .profile_info {
@@ -35,26 +39,26 @@ ul {
 .contents {
 	border: 1px solid #aaa;
 	background-color: #f9f9f9;
+	padding: 5px;
 	margin: 5px;
-	padding: 10px;
 	float: left;
+	width: 200px;
 }
 
 .category_container {
 	margin: 5px;
 	clear: both;
 	float: left;
+	width: 350px;
 }
 
 .logo {
-	width: 20px;
-	height: 20px;
-	padding-left: 10px;
+	width: 30px;
+	height: 30px;
 }
 
 .search {
-	border-radius:5px;
-	width: 500px;
+	width: 300px;
 }
 
 .category {
@@ -64,4 +68,20 @@ ul {
     -webkit-border-vertical-spacing: 3px;
     padding: 5px;
     margin: 5px;
+}
+
+.contents_title h4 {
+	display: inline;
+}
+
+.categories_title h3 {
+	display: inline;
+}
+
+.category h4 {
+	display: inline;
+}
+
+.category ul {
+	margin: 5px;
 }

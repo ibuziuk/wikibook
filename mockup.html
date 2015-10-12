@@ -3,59 +3,83 @@
 <head>
 	<title>Profile Mockup</title>
 	<link rel="stylesheet" type="text/css" href="css/mockup.css">
+	<script type="text/javascript" src="vendors/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="js/mockup.js"></script>
 </head>
 <body>
 	<header>
-		<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/400px-Wikibooks-logo-en-noslogan.svg.png">
+		<img class="logo" src="https://members.marshallcenter.org/system/files/imagecache/resource_thumbnail/Book.png">
 		<input class="search" type="search" name="search" placeholder="Search" title="Wiki Search [alt-shift-f]">
 	</header>
 
-	<section class="profile">
+	<section class="profile center">
+		<h4>Chuck Palahniuk</h4>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Palahniukmic.jpg/250px-Palahniukmic.jpg">
+		<h5>Palahniuk in May 2007</h5>
+		<h5>Website</h5>
+		<a href="http://chuckpalahniuk.net/">http://chuckpalahniuk.net/</a>
 	</section>
 
 	<aside class="profile_info">
 		<section class="contents">
-			<div class="contents_title">
-				<h3>Contents</h3>
-				<span class="toctoggle">[<a href="#" id="togglelink">hide</a>]</span>
-				<span class="toctoggle">[<a href="#" id="togglelink">show</a>]</span>
+			<div class="contents_title center">
+				<h4>Contents</h4>
+				<span class="toggle">[<a href="#" id="toggle_content">hide</a>]</span>
 			</div>
-			<ol>
+			<ol id="content_list">
 				<li><a href="#Movies">Movies</a></li>
 				<li><a href="#Books">Books</a></li>
 			</ol>
 		</section>
 
 		<section class="category_container">
-				<div class="">
-					<h3>Categories</h3>
-					<span class="toggle">[<a href="#" id="togglelink">edit</a>]</span>
-					<hr>
-				</div>
+			<div class="categories_title">
+				<h3>Categories</h3>
+				<span class="toggle">[<a href="#" id="toggle_categories">hide</a>]</span>
+				<hr>
+			</div>
 
+			<section id="category_list">
+				
 				<div class="category">
+					<span>*<span>
 					<h4>Movies:</h4>
-					[<a href="#" id="togglelink">edit</a>]
-					<ul>
+					[<a href="#" id="toggle_movies">hide</a>]
+					[<a href="#" id="">edit</a>]
+					<ul id="movie_list">
 						<li><a href="https://en.wikipedia.org/wiki/Fight_Club" target="_blank">Fight Club (1996)</a></li>
 						<li><a href="https://en.wikipedia.org/wiki/Survivor_Series_(1999)" target="_blank">Survivor (1999)</a></li>
 						<li><a href="https://en.wikipedia.org/wiki/Choke_(film)" target="_blank">Choke (2001)</a></li>
 						<li><a href="https://en.wikipedia.org/wiki/Lullaby_(2014_film)" target="_blank">Lullaby (2014)</a>
-					</ul>
-				</div>
+						</ul>
+					</div>
 
-				<div class="category">
-					<h4>Books:</h4>
-					[<a href="#" id="togglelink">edit</a>]
-					<ul>
-						<li><a href="https://en.wikipedia.org/wiki/The_Daughter_of_Time" target="_blank">The Daughter of Time (1951)</a></li>
-						<li><a href="https://en.wikipedia.org/wiki/The_Maltese_Falcon_(novel)" target="_blank">The Maltese Falcon (1929)</a></li>
-						<li><a href="https://en.wikipedia.org/wiki/The_Moonstone" target="_blank">The Moonstone (1868)</a></li>
-						<li><a href="https://en.wikipedia.org/wiki/Gaudy_Night" target="_blank">Gaudy Night (1935)</a></li>
-					</ul>
-				</div>
-		</section>
-	</aside>
+					<div class="category">
+						<span>*<span>
+						<h4>Books:</h4>
+						[<a href="#" id="toggle_books">hide</a>]
+						[<a href="#" id=""> edit </a>]
+						<ul id="book_list">
+							<li>
+								<a href="https://en.wikipedia.org/wiki/The_Daughter_of_Time" target="_blank">The Daughter of Time (1951)</a>
+								[<a href="#" id=""> edit </a>]
+							</li>
+							<li>
+								<a href="https://en.wikipedia.org/wiki/The_Maltese_Falcon_(novel)" target="_blank">The Maltese Falcon (1929)</a>
+								[<a href="#" id=""> edit </a>]
+							</li>
+							<li>
+								<a href="https://en.wikipedia.org/wiki/The_Moonstone" target="_blank">The Moonstone (1868)</a>
+								[<a href="#" id=""> edit </a>]
+							</li>
+							<li><a href="https://en.wikipedia.org/wiki/Gaudy_Night" target="_blank">Gaudy Night (1935)
+								</a>
+								[<a href="#" id=""> edit </a>]
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+		</aside>
 </body>
 </html>
