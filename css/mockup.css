@@ -1,8 +1,6 @@
 header {
 	border: 1px solid #aaa;
 	background-color: #f9f9f9;
-    padding:5px;
-    margin: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,11 +23,28 @@ ul {
 }
 
 .profile {
+	font-family: sans-serif;
 	border: 1px solid #aaa;
     padding: 5px;
     background-color: #f9f9f9;
     float: left;
     margin: 5px;
+}
+
+.profile h4, h5, img {
+	margin: 5px;
+}
+
+.profile th {
+	vertical-align: top;
+    text-align: left;
+    font-size: 90%;
+}
+
+.profile td, a {
+    line-height: 1.5em;
+    text-align: left;
+    font-size: 0.9em;
 }
 
 .profile_info {
@@ -45,6 +60,10 @@ ul {
 	width: 200px;
 }
 
+.contents a {
+	font-size: 1em;
+}
+
 .category_container {
 	margin: 5px;
 	clear: both;
@@ -53,12 +72,20 @@ ul {
 }
 
 .logo {
+	position: relative;
 	width: 30px;
 	height: 30px;
 }
 
 .search {
+	position: relative;
 	width: 300px;
+	bottom: 15px;
+	background-image: url("../img/search.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-position: 96% 45%;
+	outline: 0;
 }
 
 .category {
@@ -70,16 +97,25 @@ ul {
     margin: 5px;
 }
 
+.category a {
+	font-size: 1em;
+}
+
 .contents_title h4 {
 	display: inline;
 }
 
 .categories_title h3 {
 	display: inline;
+	font-size: 1em;
 }
 
 .category h4 {
 	display: inline;
+}
+
+.contents ol {
+	margin: 5px;
 }
 
 .category ul {
