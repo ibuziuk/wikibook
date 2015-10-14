@@ -81,7 +81,6 @@ ul {
 .search {
 	position: relative;
 	width: 300px;
-	bottom: 15px;
 	background-image: url("../img/search.png");
 	background-repeat: no-repeat;
 	background-position: right center;
