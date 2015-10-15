@@ -27,10 +27,10 @@ $(document).ready(function() {
 		var movieDir = $("#d_url").val();
 
 		var url_chunks = movieUrl.split("/");
-		var title = url_chunks[url_chunks.length - 1].replace("_", " ");
+		var title = url_chunks[url_chunks.length - 1].replace(/_/g, " ");
 
 		var dir_url_chunks = movieDir.split("/");
-		var dirTitle = dir_url_chunks[dir_url_chunks.length -1].replace("_", " ");
+		var dirTitle = dir_url_chunks[dir_url_chunks.length -1].replace(/_/g, " ");
 
 		var movie = "<a href='" + movieUrl +"' target='_blank'>" + title + "</a>"
 		var dir = "<a href='" + movieDir +"' target='_blank'>" + dirTitle + "</a>"
