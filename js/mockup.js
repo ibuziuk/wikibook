@@ -13,6 +13,14 @@ $(document).ready(function() {
 		}
 	}
 
+	function toggleAdd(button, element) {
+		if ($(element).is(":visible")) {
+			element.hide();
+		} else {
+			element.show();
+		}
+	}
+
 	function saveMovie() {
 		var movieUrl = $("#m_url").val();
 		var year = $("#m_year").val();
@@ -39,12 +47,15 @@ $(document).ready(function() {
 	});
 
 	$("#toggle_movies").click(function() {
-		toggle(this, $("#movie_list"));
-
+		toggle(this, $("#m_table"));
 	});
 
 	$("#toggle_books").click(function() {
 		toggle(this, $("#book_list"));
+	});
+
+	$("#add_movie").click(function() {
+		toggleAdd(this, $("#new_moview"));
 	});
 
 	$("#add").click(function() {
