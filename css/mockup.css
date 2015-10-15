@@ -121,3 +121,31 @@ ul {
 .category ul {
 	margin: 5px;
 }
+
+.movies_table {
+	margin: 10px;
+	clear: both;
+	float: left;
+	width: 350px;
+}
+
+.new_moview {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+    padding: 10px 40px; 
+    background-color: #f9f9f9;
+    width: 310px;
+}
+
+.new_moview input {
+	width: 300px;
+	position: relative;
+	right: 35px;
+	margin-top: 2px;
+}
+
+.new_moview button {
+	position: relative;
+	margin:5px;
+	left: 210px;
+}

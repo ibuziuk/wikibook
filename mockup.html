@@ -59,7 +59,7 @@
 			</ol>
 		</section>
 
-		<section class="category_container">
+<!-- 		<section class="category_container">
 			<div class="categories_title">
 				<h3>Categories</h3>
 				<span class="toggle">[<a href="#" id="toggle_categories">hide</a>]</span>
@@ -116,10 +116,21 @@
 						</ul>
 					</div>
 				</section>
-			</section>
+			</section> -->
 
-			<section>
-				<table class="table table-striped">
+			<section class="movies_table">
+				<div class="">
+					<h4>Movies</h4>
+					<span class="toggle">[<a href="#" id="toggle_categories">hide</a>]</span>
+					<hr>
+				</div>
+				<div id="new_moview" class="new_moview">
+  					<input id="m_url"type="url" id="movie_url" placeholder="Moview URl"><br>
+  					<input id="m_year"type="number" placeholder="Year"><br>
+  					<input id="d_url" type="url" id="director_url" placeholder="Moview URl"><br>
+  					<button id="add" type="button" class="btn btn-success">Add</button>
+				</div>
+				<table id="m_table"class="table table-striped">
 					<thead>
 						<tr>
 							<th>Movie</th>
